@@ -1,0 +1,6 @@
+<%= form_tag :action => 'update', :id => @new_posts %>
+<ul class="comments">
+    <% @all_posts.each do |p| %>
+      <li><%= p.comment %></li>
+    <% end %>
+  </ul>
